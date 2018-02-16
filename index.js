@@ -2089,6 +2089,7 @@ module.request = function(context, verb, options, entity, callback) {
       console.log(entity || '')
       console.log(JSON.stringify(body, null, 2));
     }
+    console.log(res.headers)
     if (callback) {
       if (err ||
           res.statusCode >= 300 ||
